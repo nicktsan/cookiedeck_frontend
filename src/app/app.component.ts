@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { HomeComponent } from './home/home.component';
+// import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     RouterOutlet, 
     MatSlideToggleModule, 
-    HomeComponent
+    // HomeComponent,
+    HeaderComponent,
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
